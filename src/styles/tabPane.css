@@ -1,0 +1,9 @@
+.tab-label{
+    -fx-font-size: 15pt;
+}
+.tab-main{
+    -fx-pref-width: 632;
+}
+.tab-main{
+    -fx-background-color: #00008B;
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="registerFormContext" prefHeight="740.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterFormController">
+    <children>
+        <ImageView fitHeight="740.0" fitWidth="1366.0">
+            <image>
+                <Image url="@../assets/background2.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="527.0" layoutY="70.0" text="Registration Form" textFill="#12bfff">
+            <font>
+                <Font name="System Bold" size="39.0" />
+            </font>
+        </Label>
+        <Separator layoutX="549.0" layoutY="135.0" prefHeight="0.0" prefWidth="290.0" style="-fx-background-color: #12bfff;" />
+        <Label layoutX="183.0" layoutY="195.0" text="First Name : " textFill="#12bfff">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="695.0" layoutY="194.0" text="Last Name : " textFill="#12bfff">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="183.0" layoutY="264.0" text="E mail : " textFill="#12bfff">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="183.0" layoutY="325.0" text="User Type : " textFill="#12bfff">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="183.0" layoutY="417.0" text="User Name : " textFill="#12bfff">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="183.0" layoutY="480.0" text="Password : " textFill="#12bfff">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="183.0" layoutY="541.0" text="Confirm Password : " textFill="#12bfff">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtFirstName" layoutX="308.0" layoutY="193.0" prefHeight="37.0" prefWidth="347.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtMail" layoutX="308.0" layoutY="261.0" prefHeight="37.0" prefWidth="347.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtLastName" layoutX="815.0" layoutY="193.0" prefHeight="37.0" prefWidth="347.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtUserName" layoutX="310.0" layoutY="418.0" prefHeight="37.0" prefWidth="347.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtPassword" layoutX="310.0" layoutY="479.0" prefHeight="37.0" prefWidth="347.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="txtConfirmPassword" layoutX="380.0" layoutY="542.0" prefHeight="37.0" prefWidth="347.0" />
+        <ComboBox fx:id="cmbUserType" layoutX="309.0" layoutY="326.0" prefHeight="37.0" prefWidth="269.0" />
+        <JFXButton buttonType="RAISED" layoutX="1043.0" layoutY="610.0" onAction="#RegisterOnAction" style="-fx-background-color: #00ff00;" text="Register" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="42.0" onAction="#goBackOnAction" style="-fx-background-color: #0000ff;" text="&lt;" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

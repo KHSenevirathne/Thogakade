@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" prefHeight="740.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="740.0" fitWidth="1366.0">
+         <image>
+            <Image url="@../assets/background.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="68.0" layoutY="449.0" onAction="#goToCashierLoginFormOnAction" text="Cashier" textFill="#12bfff">
+         <font>
+            <Font name="Century Schoolbook Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="527.0" onAction="#goToAdministratorLoginFormOnAction" text="Administrator" textFill="#12bfff">
+         <font>
+            <Font name="Century Schoolbook Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="294.0" layoutY="2.0" prefHeight="736.0" prefWidth="1071.0" />
+      <Label fx:id="timeShow" layoutX="58.0" layoutY="120.0" text="08:10:30" textFill="WHITE">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="meridiemShow" layoutX="196.0" layoutY="120.0" text="AM" textFill="WHITE">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateShow" layoutX="14.0" layoutY="72.0" text="10/08/2021" textFill="WHITE">
+         <font>
+            <Font name="Poor Richard" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="187.0" prefHeight="2.0" prefWidth="261.0" />
+   </children>
+</AnchorPane>
